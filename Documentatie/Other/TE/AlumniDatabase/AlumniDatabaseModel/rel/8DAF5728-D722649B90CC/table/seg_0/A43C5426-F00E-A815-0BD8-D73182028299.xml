@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A43C5426-F00E-A815-0BD8-D73182028299" name="News">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>E1211E0F-4201-B569-A364-2C56A6311898</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NewsID" id="1785B347-B635-82C7-6C10-EC6DCAB0B963">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>9833F442-C2B0-7F4A-0A20-5F88E657A250</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Title" id="5E8E7698-8160-4A38-7B4B-35A2800094AC">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>04C72765-CFF9-4F88-E0E9-CF1E9A52CF86</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Text" id="E0BC4C84-A5D1-76C4-01B8-50437256CC04">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>4F0B3782-EFA0-1E6C-DCFF-DBCA2A4EDF2E</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>max</dataTypeSize>
+<ownDataTypeParameters>max,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Users_UserID" id="973439F5-B9E2-D222-2836-0C31413FF2F8">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>DD185FA9-F4B9-67CA-71D6-B85C9D279DBE</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6506BF14-3F22-D5A9-0847-7117DFD6ABEB" referredColumn="75982A30-95EA-4C03-FC55-BDB72F4FB95C"/>
+</associations>
+</Column>
+<Column name="Date" id="8D69B25C-3A13-B22F-C3BE-E30E1A74D85F">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>814E9C86-242A-64BB-AB35-9019B266C3BC</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8693EFE5-2FE6-FDC5-625B-3F39C656BEC1" name="News_PK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>F773A22B-7A4B-ACDA-D02B-C8145CD7F08A</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1785B347-B635-82C7-6C10-EC6DCAB0B963"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D831050-D382-A2CE-0208-16B6C924C18B" name="News_Users_FK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>5249F98A-9A2D-1154-0C1D-782529AE2D5B</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="973439F5-B9E2-D222-2836-0C31413FF2F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

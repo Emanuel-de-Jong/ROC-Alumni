@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD2EDA1E-6596-2971-F924-6E07DE2C895D" name="UserRoles">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<ordsAlias>relation_30</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Users_UserID" id="51AF793C-D15E-EF86-CF53-B51C86149886">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="76B51B84-83A6-B71F-3685-C1F3EF84385C" referredColumn="75982A30-95EA-4C03-FC55-BDB72F4FB95C"/>
+</associations>
+</Column>
+<Column name="Roles_RoleID" id="A91CAF4A-DD33-BB5B-2A70-E486F7D51E0B">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97DD2C98-139E-F7DE-7ABE-8E639A8402F0" referredColumn="BDACC578-B06D-073C-CDD2-A58D8BA66236"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E76E99FB-22F1-0183-0FC6-852DEE34A89F" name="Relation_30_PK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51AF793C-D15E-EF86-CF53-B51C86149886"/>
+<colUsage columnID="A91CAF4A-DD33-BB5B-2A70-E486F7D51E0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED183F7E-02E8-6E71-2613-8C1607181845" name="Relation_30_Users_FK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>75BCDB62-D4CA-8AEB-EAE2-2BC355F502F8</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51AF793C-D15E-EF86-CF53-B51C86149886"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B064EB13-BFFC-1770-8031-552E51A7F494" name="Relation_30_Roles_FK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>75BCDB62-D4CA-8AEB-EAE2-2BC355F502F8</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A91CAF4A-DD33-BB5B-2A70-E486F7D51E0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

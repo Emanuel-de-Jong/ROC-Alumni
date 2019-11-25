@@ -1,0 +1,13 @@
+﻿<link href="@Url.Content("~/Content/admin.css")" rel="stylesheet" type="text/css" />
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Admin Tools</h2>
+
+<div class="div-adminpage">
+    <input type="button" value="Rol Beheer" onclick="location.href='@Url.Action("Index", "Roles")'" class="adminbutton" style="margin-top 3%" />
+    <input type="button" value="Gebruiker Beheer" onclick="location.href='@Url.Action("Index", "Users")'" class="adminbutton" />
+</div>
+<div class="background"></div>

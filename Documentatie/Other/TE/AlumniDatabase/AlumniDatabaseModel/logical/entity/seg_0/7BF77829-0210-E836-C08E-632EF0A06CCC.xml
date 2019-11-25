@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7BF77829-0210-E836-C08E-632EF0A06CCC" name="Messages">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 12:19:16 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="MessageID" id="76536993-86F6-7203-132A-5DC7FF33C09D">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 12:30:28 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Text" id="D8EABE9C-9FDD-54CD-21F5-4378FD3C058D">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 12:30:56 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>max</dataTypeSize>
+<ownDataTypeParameters>max,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UserID" id="07AE79B4-78E1-ADFF-E938-12E82DF2675D">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 14:27:59 UTC</createdTime>
+<generatorID>C5A6C9A6-6E69-608C-263E-1623F9208582</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<referedAttribute>4F9630E1-3B15-E885-8A67-17CB233C6FED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UserID1" id="FE272556-F15D-30B1-EDB7-813FE8657B23">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 14:28:22 UTC</createdTime>
+<generatorID>81000586-936C-8A8C-3F22-0422FECF9379</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<referedAttribute>4F9630E1-3B15-E885-8A67-17CB233C6FED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date" id="B4D7F95D-EC2D-8696-8E9E-B1AA1193DCAE">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-07 06:49:46 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Picture" id="E13FED34-5B67-A403-1FA7-F2B764EA39A2">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-07 08:54:30 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT041</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="05401C98-B128-F116-C9A6-412EA316D0B3" name="Messages PK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 12:30:54 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>76536993-86F6-7203-132A-5DC7FF33C09D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

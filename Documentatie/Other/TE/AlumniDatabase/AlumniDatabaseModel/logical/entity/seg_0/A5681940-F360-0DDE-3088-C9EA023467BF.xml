@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A5681940-F360-0DDE-3088-C9EA023467BF" name="Addresses">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 10:22:32 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="AddressID" id="F41E8563-F822-1CAB-EBB9-861CEF2B3EC8">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 10:22:41 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Country" id="03A4E89D-3712-8E4D-289B-574041686F59">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 10:22:54 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="State" id="8AAD7A37-8353-0E88-89C3-6B60D3ECE4CE">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 11:18:04 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="City" id="E8355CE6-CCCD-5B54-A2DC-E1423F0D1FA0">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 11:19:01 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Street" id="7033A791-60F2-4447-80BD-314C9DBF5719">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 11:19:34 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StreetNumber" id="24770C3F-1C47-1C32-EC78-F6077F603AF3">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 11:26:55 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="75DEE7D9-EA8C-FDA0-6413-A57A2E699AF1" name="Addresses PK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 10:22:51 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F41E8563-F822-1CAB-EBB9-861CEF2B3EC8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

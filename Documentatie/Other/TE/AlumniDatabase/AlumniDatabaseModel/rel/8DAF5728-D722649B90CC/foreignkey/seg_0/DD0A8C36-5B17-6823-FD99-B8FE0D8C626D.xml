@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DD0A8C36-5B17-6823-FD99-B8FE0D8C626D" containerWithKeyObject="F8489286-4363-1B1A-77E5-E1E40905F2AB" localFKIndex="12D85809-FDC9-EEF4-5E28-BBC15B2E4542" name="Users_Genders_FK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>FE7F186D-74E8-895B-F1EF-C5D892EF17B2</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<referredTableLongName>Genders</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>578C19A0-AE19-824B-216E-1A304455F178</referredTableID>
+<keyObject>A56DB47C-B965-F11F-5540-B4BD689445ED</keyObject>
+<referredKeyID>A56DB47C-B965-F11F-5540-B4BD689445ED</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>GenderID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9B04A123-F8CC-6C2C-379D-501C3A955F64" name="Courses">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 13:54:53 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CourseID" id="19A16F88-B600-BFD3-0283-F31EB4442423">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 13:56:53 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Name" id="FDEBC517-A17A-9073-69F2-B31B04151219">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 13:57:23 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AddressID" id="D65410C3-C624-02FF-4413-90279B5AEFB1">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 14:03:00 UTC</createdTime>
+<generatorID>6EB7FB96-900B-59A1-DB9A-323D9F40A240</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<referedAttribute>F41E8563-F822-1CAB-EBB9-861CEF2B3EC8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="33E2FB07-85A1-8AF2-62D5-D587249E96B1" name="Courses PK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 13:57:17 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>19A16F88-B600-BFD3-0283-F31EB4442423</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

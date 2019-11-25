@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="91570084-7497-D623-FACC-E36E3E31C23A" name="Replies">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-07 10:31:50 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RepliesID" id="0812253B-6BF3-8E0A-44B3-89ACCD7CB2DA">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-07 10:32:00 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Text" id="2E6D3626-BDC9-2E72-86B2-790517DDA27B">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-07 10:32:12 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>max</dataTypeSize>
+<ownDataTypeParameters>max,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date" id="C6933DA7-2BD6-A585-56E0-F79E42094CDC">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-07 10:32:35 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PostID" id="BC03E676-C668-AEF0-12D2-723F2AFA61F5">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-07 10:33:35 UTC</createdTime>
+<generatorID>33158E2A-6A1C-EDB0-7472-C2B9210648F6</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<referedAttribute>EDCBFBCC-5D89-D176-67D1-7805CAEB5795</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E937EDEB-2D9D-2715-7DED-4201B5B6CFE7" name="Replies PK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-07 10:32:11 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0812253B-6BF3-8E0A-44B3-89ACCD7CB2DA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

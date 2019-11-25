@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="40D076F9-253E-4F53-32CD-54A5E2EA3CE4" containerWithKeyObject="FAB6B0A9-F177-4472-9807-B6BEFC6ABC38" localFKIndex="840D62AD-9141-AF03-CFEF-6F974CDE1735" name="Reports_Vacancies_FK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>03DA3601-DB61-B1B4-320F-47B5ADDACEE7</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<referredTableLongName>Vacancies</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6D3BA048-AC29-5BD5-0C8B-0975B5D9951F</referredTableID>
+<keyObject>31F128FC-4DA5-3715-B8AA-213231BCA9B1</keyObject>
+<referredKeyID>31F128FC-4DA5-3715-B8AA-213231BCA9B1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>VacancyID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

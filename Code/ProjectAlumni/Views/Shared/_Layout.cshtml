@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>@ViewBag.Title - Alumni</title>
+    @Styles.Render("~/Content/css")
+    <link href="@Url.Content("~/Content/General.css")" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/frontend.js"></script>
+
+</head>
+<body>
+    
+    <div class="mobile-nav" onclick="mobilenav()" id="mobile-nav">
+        <div class="main" id="main">
+            <div class="box1 shadow">
+                <i class="fa fa-navicon" style="font-size:42px; color:white; margin: 10px 10px;"></i>
+            </div>
+            <div class="box2">
+                <i class="fa fa-search" style="font-size:42px; color:white;margin: 10px 10px;"></i>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-links" id="mobile-links">
+        <ul>
+            <li>
+                <div class="box1 shadow">
+                    <span>
+                        @Html.ActionLink("Startpagina", "Index", "Home")
+                    </span>
+                </div>
+                <div class="box2">
+
+                </div>
+            </li>
+            <li>
+                <div class="box1 shadow">
+                    <span>
+                        @Html.ActionLink("Nieuws", "Index", "News")
+                    </span>
+                </div>
+                <div class="box2">
+
+                </div>
+            </li>
+            @using Microsoft.AspNet.Identity
+            @if (Request.IsAuthenticated)
+            {
+                using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <li>
+                        <div class="box1 shadow">
+                            <span>@Html.ActionLink("Profiel", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })</span>
+                        </div>
+                        <div class="box2">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box1 shadow">
+                            <span><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></span>
+                        </div>
+                        <div class="box2">
+
+                        </div>
+                    </li>
+                }
+            }
+            else
+            {
+                <li>
+                    <div class="box1 shadow">
+                        <span>@Html.ActionLink("Registreer", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</span>
+                    </div>
+                    <div class="box2">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="box1 shadow">
+                        <span>@Html.ActionLink("Inloggen", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</span>
+                    </div>
+                    <div class="box2">
+
+                    </div>
+                </li>
+            }
+
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li>
+                    <div class="box1 shadow">
+                        <span>
+                            @Html.ActionLink("Forum", "Index", "Post")
+                        </span>
+                    </div>
+                    <div class="box2">
+
+                    </div>
+                </li>
+
+            }
+
+            @if (User.IsInRole("Admin"))
+            {
+                <li>
+                    <div class="box1 shadow">
+                        <span>@Html.ActionLink("Admin", "Index", "Admin")</span>
+                    </div>
+                    <div class="box2">
+
+                    </div>
+                </li>
+
+            }
+
+
+
+        </ul>
+    </div>
+    @RenderBody()
+    <div class="hamburger" onclick="nav()">
+        <div class="icon"></div>
+        <div" class="logo"></div">
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <ul class="nav">
+            <li>@Html.ActionLink("Startpagina", "Index", "Home")</li>
+            <li>@Html.ActionLink("Nieuws", "Index", "News")</li>
+            @if (User.Identity.IsAuthenticated)
+            {
+
+                <li>@Html.ActionLink("Forum", "Index", "Post")</li>
+                <li>@Html.ActionLink("Vacatures", "Index", "Vacancies")</li>
+            }
+            @if (User.IsInRole("Admin"))
+            {
+                <li>@Html.ActionLink("Admin", "Index", "Admin")</li>
+            }
+
+
+            <li class="empty"></li><!--leave this empty-->
+        </ul>
+        <ul class="userbar">
+            @Html.Partial("_LoginPartial")
+            <li class="empty2"></li><!--leave this empty-->
+        </ul>
+    </nav>
+</body>
+</html>

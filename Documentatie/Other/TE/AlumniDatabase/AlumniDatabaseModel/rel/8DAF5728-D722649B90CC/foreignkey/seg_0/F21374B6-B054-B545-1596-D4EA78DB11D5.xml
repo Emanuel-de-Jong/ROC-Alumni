@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F21374B6-B054-B545-1596-D4EA78DB11D5" containerWithKeyObject="FAB6B0A9-F177-4472-9807-B6BEFC6ABC38" localFKIndex="557E8230-E6E6-B713-616B-BB2E777A96A1" name="Reports_Posts_FK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>20698602-4455-9C27-FE20-C6285DD9DF12</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<referredTableLongName>Posts</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1FA3C0C7-04BE-B9A1-8B36-B7DD57BC0484</referredTableID>
+<keyObject>135F2017-2D38-9F44-009A-93E9D3DFA458</keyObject>
+<referredKeyID>135F2017-2D38-9F44-009A-93E9D3DFA458</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PostID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

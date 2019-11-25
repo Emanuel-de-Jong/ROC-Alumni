@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2431BA79-AF97-C711-69A9-7663A65CBD8D" name="VacancyTags">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<ordsAlias>relation_29</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Vacancies_VacancyID" id="284043F9-CB10-DF47-1FFD-D8C8BF7506C7">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E34AF12F-E9D0-4954-579F-B84FE7490316" referredColumn="30CFBC5E-810E-00FA-A50B-A750C16CCDE1"/>
+</associations>
+</Column>
+<Column name="Tags_TagID" id="2BA3E4F8-3031-344C-3ABD-736EA2EDE299">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C6784D75-59FB-41C6-0692-D9C01AD41730" referredColumn="E3A8D8F9-3A53-DAE6-484A-7605C2D570CC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E9D0A337-D271-9913-2F40-8AF291A7B3EA" name="Relation_29_PK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="284043F9-CB10-DF47-1FFD-D8C8BF7506C7"/>
+<colUsage columnID="2BA3E4F8-3031-344C-3ABD-736EA2EDE299"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7425295-1D50-6CAA-F125-5EB695BCA074" name="Relation_29_Vacancies_FK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>841939E9-389B-6CB3-E257-4B84E4E42F81</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="284043F9-CB10-DF47-1FFD-D8C8BF7506C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE9BF1F0-CEA1-B9D4-AE2D-ACF2676884E6" name="Relation_29_Tags_FK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>841939E9-389B-6CB3-E257-4B84E4E42F81</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BA3E4F8-3031-344C-3ABD-736EA2EDE299"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

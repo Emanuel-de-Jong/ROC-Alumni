@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2E1442F-1523-5910-3B74-5FD43096E735" name="Pictures">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>00AA3B31-D484-5A3A-3A61-64ADD6FE3D88</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="News_NewsID" id="C72BEBA1-F5E4-DA97-05AD-22B9DBFFE8D0">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>CAF64025-CC7E-0E89-2E5A-3C7E7E83BAE4</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D11B393-6BF6-6922-EE63-FF7759CC5421" referredColumn="1785B347-B635-82C7-6C10-EC6DCAB0B963"/>
+</associations>
+</Column>
+<Column name="PictureID" id="FF091439-1E26-AD75-480D-CAE7AC9BE8A2">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>A04A3C7C-19F8-67C6-0DDE-AFE0455518FA</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Picture" id="C4DF4150-E41F-0F9F-8A73-2F122EA0589B">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>3D805F0E-579F-7A5F-5DCE-148E7A0AA51F</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT041</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="45D0EAA2-6734-7A46-3CA2-63F58B00B7AE" name="Pictures_PK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>654E69E9-43D2-6677-1C12-BC6627C44942</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF091439-1E26-AD75-480D-CAE7AC9BE8A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D79FD41-3E16-081E-04A7-8E35745B2F41" name="Pictures_News_FK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>414D5F51-9938-52E6-B845-8E25496616F4</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C72BEBA1-F5E4-DA97-05AD-22B9DBFFE8D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

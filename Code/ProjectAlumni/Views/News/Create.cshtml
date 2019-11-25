@@ -1,0 +1,61 @@
+﻿@model ProjectAlumni.Models.news
+
+@{
+    ViewBag.Title = "Create";
+}
+<link href="@Url.Content("~/Content/news.css")" rel="stylesheet" type="text/css" />
+
+
+
+@using (Html.BeginForm("Create", "News", FormMethod.Post, new { @class = "form-horizontal", role = "form", enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+<div class="container background2">
+    <h2>Nieuws</h2>
+    <hr />
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.title, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.title, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.title, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.text, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextAreaFor(model => model.text, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.text, "", new { @class = "text-danger" } )
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.thumbnail, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input type="file" name="upload" id="fileUpload" accept=".png,.jpg,.jpeg,.gif,.tif" />
+
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+    <div style="background-color:white;border-radius:2px; padding:5px;text-align:center;
+width:100px;">
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</div>
+
+}
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+<div class="background"></div>

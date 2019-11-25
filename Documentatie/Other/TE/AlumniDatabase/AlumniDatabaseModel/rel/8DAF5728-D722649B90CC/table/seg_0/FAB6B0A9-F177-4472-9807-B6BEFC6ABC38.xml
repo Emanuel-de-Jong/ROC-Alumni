@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FAB6B0A9-F177-4472-9807-B6BEFC6ABC38" name="Reports">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>616F130A-0386-6AB9-C001-2C5C8EADEA43</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Vacancies_VacancyID" id="0974B7A4-D783-2DA4-2E9C-8FAD218F541C">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>A86967E7-6E27-4F5D-4EE4-A2F8C64A2D41</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="40D076F9-253E-4F53-32CD-54A5E2EA3CE4" referredColumn="30CFBC5E-810E-00FA-A50B-A750C16CCDE1"/>
+</associations>
+</Column>
+<Column name="Posts_PostID" id="8A2EDD62-4CF4-CE03-3CC5-CCBC0029CA6C">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>25D404FE-BDE3-49A7-BDE3-2457500382E3</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F21374B6-B054-B545-1596-D4EA78DB11D5" referredColumn="DA3AD136-DCE0-F779-0E89-9C93DF699D96"/>
+</associations>
+</Column>
+<Column name="ReportID" id="77B24B23-E716-2116-D320-4CF6622B33D6">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>2CB26736-64D9-007F-B3F3-2C88A0FEC019</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Text" id="6B694251-DC11-CA8B-D4B9-52CDADF52943">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>3B9DAAAB-0E95-003E-DF10-18DDBE063304</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>max</dataTypeSize>
+<ownDataTypeParameters>max,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Date" id="0C9EFEE2-0812-F7DD-20D1-8889DFCA5EF3">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>5E332046-CE86-3B31-F8CD-F77BAF1B935C</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F09D8823-4797-9BB5-E6FD-20BCAFEA5F5C" name="Reports_PK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>506A61B6-8C8D-B6AB-5016-66D292B6316A</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77B24B23-E716-2116-D320-4CF6622B33D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="840D62AD-9141-AF03-CFEF-6F974CDE1735" name="Reports_Vacancies_FK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>03DA3601-DB61-B1B4-320F-47B5ADDACEE7</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0974B7A4-D783-2DA4-2E9C-8FAD218F541C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="557E8230-E6E6-B713-616B-BB2E777A96A1" name="Reports_Posts_FK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>20698602-4455-9C27-FE20-C6285DD9DF12</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A2EDD62-4CF4-CE03-3CC5-CCBC0029CA6C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="AlumniDatabaseModel" id="ED09CEF4-0D8A-2B61-E47F-4E26964E3633" version="3.5">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-06 10:04:15 UTC</createdTime>
+<ownerDesignName>databaselol</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>ED09CEF4-0D8A-2B61-E47F-4E26964E3633</designId>
+</OSDM_Design>

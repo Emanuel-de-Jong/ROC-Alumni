@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D2BAE4C1-9975-C5CA-3253-A5344E3548B4" name="UserTags">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<ordsAlias>relation_28</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Users_UserID" id="A439D39F-61E6-5F44-8024-7B2C5793DA6C">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="79CE44E1-3379-EC8E-5E1A-71468F9B5903" referredColumn="75982A30-95EA-4C03-FC55-BDB72F4FB95C"/>
+</associations>
+</Column>
+<Column name="Tags_TagID" id="98E73759-AFF7-D861-4D9C-572DDD7503AF">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61E4E035-CD00-5061-6323-98789F40355F" referredColumn="E3A8D8F9-3A53-DAE6-484A-7605C2D570CC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EC28A99E-8E6F-B908-3A6E-B31FA6494C99" name="Relation_28_PK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A439D39F-61E6-5F44-8024-7B2C5793DA6C"/>
+<colUsage columnID="98E73759-AFF7-D861-4D9C-572DDD7503AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4870864-38E6-1D1C-129B-F23805667A8F" name="Relation_28_Users_FK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>5691669C-0534-7B1F-1158-5FFB6BE29316</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A439D39F-61E6-5F44-8024-7B2C5793DA6C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E34E32BE-F031-94E4-D7A1-8ACAD49C708B" name="Relation_28_Tags_FK">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-11 15:54:42 UTC</createdTime>
+<generatorID>5691669C-0534-7B1F-1158-5FFB6BE29316</generatorID>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98E73759-AFF7-D861-4D9C-572DDD7503AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

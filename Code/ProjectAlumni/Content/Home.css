@@ -1,0 +1,217 @@
+﻿/* home no login ----------------------------------------------------------------------------------------------------------*/
+html {
+	
+}
+html,body{
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+    left:0;
+    right:0;
+}
+@keyframes background {
+    0% {
+        background-image: url('../Media/foto/background-restaurant1@2x.png');
+    }
+
+    50% {
+        background-image: url('../Media/foto/restaurants-background-2@2x.png');
+    }
+    100% {
+        background-image: url('../Media/foto/background-restaurant1@2x.png');
+    }
+}
+
+.pc-header {
+    top: -1vw;
+    z-index: -1;
+    position: absolute;
+    transition: background-image 0.5s;
+    transition-timing-function: ease-in-out;
+    animation: background 13s;
+    animation-iteration-count: infinite;
+    height: 100vh;
+    width: 110vw;
+    margin: -5vw -5vw auto -5vw;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path:polygon(0 0,100% 0,100% 100%,0 80%);
+}
+    .pc-header::before {
+        filter: grayscale(100%);
+    }
+    .pc-header h1 {
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        width: 100%;
+        position: relative;
+        margin-top: 30vh;
+        padding-top: 150px;
+        font-family: 'Segoe UI';
+        font-size: 6em;
+        font-weight: 800;
+        color: white;
+        text-align: center;
+    }
+	.pc-header h2 {
+        top:5vw;
+        left: 80px;
+		position: absolute;
+		padding-left: 3vw;
+		font-family: 'Segoe UI';
+		font-size: 3em;
+		color: white;
+		text-align: left;
+	}
+
+
+.information {
+    padding: 3%;
+	background-image: url("../Media/svg/information-background.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 40px;
+	width: 90%;
+	
+	margin: 120vh auto 100px auto;
+	box-shadow: 8px 8px 25px black;
+}
+.pc-footer {    
+    margin-left:-1vw;
+    margin-right: -1vw;
+    bottom:0;
+	height: 300px;
+    width: 100vw;
+	color: white;
+	font-family: 'Segoe UI';
+	background-image: url("../Media/svg/footer.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	list-style-type: none;
+}
+
+	.pc-footer h2 {
+		font-weight: bold;
+	}
+
+	.pc-footer .info {
+		display: inline-block;
+		list-style: none;
+		margin-top: 105px;
+		margin-left: 5%;
+		bottom: 60px;
+	}
+
+#menu g:hover {
+	filter: url(#pictureFilter);
+}
+
+.newsBox {
+    z-index:10;
+    margin: 2% 1%;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 200px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.575);
+    padding-bottom:2%;
+}
+    .newsBox .text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+    }
+    .newsBox h2 {
+        text-align: center;
+    }
+    .newsBox .image {
+        width: 120px;
+        height: 120px;
+        -webkit-border-radius: 60px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 60px;
+        -moz-background-clip: padding;
+        border-radius: 60px;
+        background-clip: padding-box;
+        margin: 7px 0 0 5px;
+        float: left;
+        background-size: cover;
+        background-position: center center;
+    }
+    .news-container{
+        display:grid;
+        grid-template-columns: auto 80%;
+        padding-bottom:5%;
+    }
+@media only screen and (max-width: 650px) {
+    .information{
+        margin-top:130vw;
+    }
+    header, .seperation *, .seperation, #text {    
+        padding:0;
+        margin:0;
+        background:none;
+        width: 0px !important;
+        height: 0px !important;
+        opacity: 0 !important;
+        display: none;
+        clear: both;
+    }
+    .mobile-header {
+        position: absolute;
+        top: -10vh;
+        opacity: 1;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('../media/foto/background-roc-almelo@2x.png');
+        background-position: 40% center;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    }
+        .mobile-header .box1 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 1;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(255, 0, 13, 0.70); /*red*/
+            clip-path: polygon(0 0, 0 50%, 100% 95%, 0 100%);
+        }
+
+        .mobile-header .box2 {
+            
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 1;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(11, 99, 162, 0.36);/*blue*/
+        }
+
+
+}
+.news-button {
+    top: 120px;
+    width: 60px;
+    height: 80px;
+    background-color: rgb(5, 5, 129);
+    position: fixed;
+    z-index: 100;
+}
+.load {margin-bottom:50px;
+    width:200px;
+    text-align:center;
+    padding:5px;
+    height: 30px;
+    margin: 2px auto 20px auto;
+    min-width: 20%;
+    background-color: #0063AD;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}

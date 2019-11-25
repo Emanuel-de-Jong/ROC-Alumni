@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_24" directorySegmentName="seg_0" id="03DA3601-DB61-B1B4-320F-47B5ADDACEE7">
+<createdBy>Emanu</createdBy>
+<createdTime>2019-06-07 07:27:41 UTC</createdTime>
+<ownerDesignName>AlumniDatabaseModel</ownerDesignName>
+<engineerTo>
+<item key="8DAF5728-D620-1FE1-67BC-D722649B90CC" value="true"/>
+</engineerTo>
+<sourcePk>234B8129-5DF5-4C5A-4E81-7AD3E868B73B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A290A130-353A-3D9C-6213-9380EAB42774</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>616F130A-0386-6AB9-C001-2C5C8EADEA43</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

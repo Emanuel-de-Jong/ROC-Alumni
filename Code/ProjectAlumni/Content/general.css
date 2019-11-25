@@ -1,0 +1,251 @@
+body,
+html {
+    width: 100vw;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav, .triangle{
+	position: fixed !important;
+}
+.triangle {
+	z-index: 50;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 150px;
+	height: 150px;
+	background-image: url("../media/svg/roc-menu.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.navbar {
+    -webkit-filter: drop-shadow(-5px 5px 10px rgba(0,0,0,0.6));
+    filter: drop-shadow(-5px 5px 10px rgba(0,0,0,0.6));
+    opacity: 0.9;
+    padding-left: 40px;
+    top: 0px;
+    left: auto;
+    right: -10px;
+    position: absolute;
+    min-width: 300px;
+    border-radius: 0 100px;
+    background-color: rgb(5, 5, 129);
+    color: white;
+    z-index: 10;
+    display: table-cell;
+    vertical-align: middle;
+}
+.navbar li {
+    margin-top: 3px;
+    float: left;
+    list-style-type: none;
+}
+.navbar a{
+    z-index: 100 !important;
+}
+.nav a {
+    padding: 13px 0px 13px 0px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar a:hover {
+    background-color: rgba(0,0,0, 0.2) !important;
+}
+.userbar {
+    position: absolute;
+    top: 48px;
+    right: 50px;
+    left: auto;
+    background-color: blue;
+    padding: 10px 50px 10px 40px;
+    border-radius: 0 50px;
+}
+    .userbar a {
+        color: white;
+        padding: 13px 5px 13px 5px;
+        font-size: 0.9em;
+    }
+.userbar li{
+    margin-top: 0px;
+}
+.empty{
+    padding-right:150px;
+}
+.empty2{
+    padding-right:20px;
+}
+.hamburger {
+    box-shadow: 5px 5px 40px rgba(0,0,0,0.2);
+    width:300px;
+    height:300px;
+    background-color: white;
+    position: fixed;
+    z-index: 110;
+    top: -180px;
+    right: -180px;
+    transform: rotate(45deg);
+}
+.logo {
+    z-index: 100;
+    transform: rotate(-45deg);
+    position:absolute;
+    top:205px;
+    right:125px;
+    width:100px;
+    height:80px;
+    background-size: 100px;
+    background-image: url(../Media/svg/roc-logo.svg);
+}
+.icon {
+    z-index: 100;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 250px;
+    right: 100px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-image: url(../Media/svg/menu.svg);
+}
+.mobile-nav {
+    position: fixed;
+    top: 20px;
+    left: auto;
+    right: 0px;
+    width: 100vw;
+}
+
+    .mobile-nav .main {
+        right: 0;
+        left: auto;
+        position: absolute;
+        background-color: rgb(170, 8, 8);
+        height: 60px;
+        display: grid;
+        grid-template-columns: 60% auto;
+        width: 160px;
+    }
+
+    .mobile-nav .icon {
+        height: 90%;
+        margin: auto;
+    }
+
+    .mobile-nav .box1 {
+        height: 60px;
+        clip-path: polygon(0 0,80% 0,100% 100%,0 100%);
+        background-color: rgb(116, 14, 14);
+    }
+
+    .mobile-nav .box2 {
+    }
+
+.mobile-links {
+    z-index: 100;
+    position: fixed;
+    right: -110vw;
+    left: auto;
+    top: 100px;
+    width: 100%;
+}
+
+    .mobile-links ul {
+        list-style: none;
+        color: white;
+    }
+
+    .mobile-links li {
+        background-color: rgb(116, 14, 14);
+        width: 90vw;
+        height: 60px;
+        display: grid;
+        margin-top: 10px;
+        grid-template-columns: 60% auto;
+    }
+
+    .mobile-links a {
+        display: flex;
+        vertical-align: middle;
+        padding: 30px 20px;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-family: sans-serif;
+        font-weight: 400;
+    }
+
+    .mobile-links .box1 {
+        height: 60px;
+        background-color: rgb(170, 8, 8);
+        clip-path: polygon(0 0,100% 0,80% 100%,0 100%);
+    }
+
+        .mobile-links .box1:active {
+            transition: background-color 0.25s;
+            background-color: rgb(12, 1, 1);
+        }
+
+.shadow {
+    filter: drop-shadow(20px 0px 30px 30px rgb(0, 0, 0));
+    -webkit-filter: drop-shadow(20px 0px 30px 30px rgb(0, 0, 0));
+}
+
+.mobile-background {
+    position: absolute;
+    height: 100vh;
+    background-image: url(../media/mobile-background.png);
+    background-size: auto 100%;
+}
+
+    .mobile-background .box1 {
+        z-index:10;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(136, 2, 2, 0.8);
+    }
+
+    .mobile-background .box2 {
+        z-index:9;
+        position: absolute;
+        left: -1vw;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(10, 10, 124, 0.8);
+    }
+
+.shadow {
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+    filter: drop-shadow(-5px 5px 10px rgba(0,0,0,0.6));
+}
+
+.mobile-nav, mobile-links {
+    z-index: 100;
+    opacity: 0;
+}
+@media only screen and (min-width: 650px) {
+    .mobile-nav *, .mobile-nav, .mobile-links *, .mobile-links{
+        width:0;
+        height:0;
+        right:-1000vw;
+    }
+}
+    @media only screen and (max-width: 650px) {
+        .hamburger, .navbar {
+            width: 0px !important;
+            height: 0px !important;
+            opacity: 0 !important;
+            display: none;
+        }
+
+        .mobile-nav, .mobile-links * {
+            opacity: 1;
+        }
+    }
