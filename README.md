@@ -2,7 +2,7 @@
  
 ## Information
 - Type: Web Application
-- Language: English
+- Language: Dutch
 - Programming languages: C#, HTML, CSS, SQL
 - Framework: ASP.NET MVC
 	
