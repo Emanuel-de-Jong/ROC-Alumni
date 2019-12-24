@@ -1,22 +1,28 @@
 # Alumni
  
+## Description
+A website for Alumni students.
+This was the first real project we got from school.
+
+
 ## Information
 - Type: Web Application
 - Language: Dutch
 - Programming languages: C#, HTML, CSS, SQL
-- Framework: ASP.NET MVC
+- Framework: ASP.NET MVC, 
 	
 	
 ## Progress
-- Start date: 18.06.2019
-- Last change: 12.07.2019
+- Start date: 16.06.19
+- Last change: 26.07.19
 - Useable: Yes
-- Activity status: Done
+- Activity status: Complete
 
 
 ## Screenshots
-![Home](https://raw.githubusercontent.com/Emanuel-de-Jong/Alumni/master/Screenshots/Home.png)
+These are all screenshots of the mockup because the database is down. But it looks similar enough.
+![Home](/Screenshots/Home.png)
 
-![Login](https://raw.githubusercontent.com/Emanuel-de-Jong/Alumni/master/Screenshots/Login.png)
+![Login](/Screenshots/Login.png)
 
-![User Settings](https://raw.githubusercontent.com/Emanuel-de-Jong/Alumni/master/Screenshots/User%20Settings.png)
+![User Settings](/Screenshots/User%20Settings.png)
