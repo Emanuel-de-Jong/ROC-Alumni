@@ -9,7 +9,7 @@ This was the first real project we got from school.
 - Type: Web Application
 - Language: Dutch
 - Programming languages: C#, HTML, CSS, JS, SQL
-- Framework: ASP.NET MVC
+- Framework: ASP.NET MVC, .NET Framework
 	
 	
 ## Progress
