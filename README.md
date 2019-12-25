@@ -15,7 +15,6 @@ This was the first real project we got from school.
 ## Progress
 - Start date: 16.06.19
 - Last change: 26.07.19
-- Useable: Yes
 - Activity status: Complete
 
 
