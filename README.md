@@ -1,7 +1,5 @@
 # Alumni
-A website for Alumni students.
-
-This was the first real project we got from school.
+A website for Alumni students. This was the first real project we got from school.
 
 **Active Development:** <br>
 **Last Change:** <br>
