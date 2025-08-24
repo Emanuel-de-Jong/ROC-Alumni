@@ -20,6 +20,6 @@ These are all screenshots of the mockup because the database is down. But it loo
 - Framework: ASP.NET MVC, .NET Framework
 	
 ## Progress
-- Start date: 16.06.19
-- Last change: 26.07.19
+- Start date: 2019-06-16
+- Last change: 2019-07-26
 - Activity status: Complete
